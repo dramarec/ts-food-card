@@ -182,17 +182,18 @@ body {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1200;
-    overflow: scroll;
 }
 
 .Modal {
-    // max-width: calc(100vw - 48px);
-    // max-height: calc(100vh - 24px);
-    // position: relative;
+    max-width: calc(100vw - 48px);
+    max-height: calc(100vh - 24px);
+    // width: calc(100vw);
+    // height: calc(100vh);
+    position: relative;
     background-color: #fff;
-    width: calc(100vw);
-    height: calc(100vh);
     padding: 30px;
+    overflow: scroll;
+    // overflow: hidden;
 }
 
 .modal_icon {

@@ -4,6 +4,7 @@ import SearchBar from './SearchBar';
 import CardsList from './CardsList';
 import Modal from './Modal';
 import Basket from './Basket';
+// import Cards from '../cards.json'
 
 const getInitialTodoState = () => {
     // const savedTodos = localStorage.getItem('todos') ?? ''; //new chaining
@@ -56,7 +57,7 @@ function App() {
         console.log("🔥🚀 ===> addToCart ===> product", product);
         setCart(prev => [...prev, { ...product }])
     }
-    
+
     const removeFromCart = (product: ICards) => {
         setCart(prev =>
             prev.filter(item => item !== product)
